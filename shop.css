@@ -41,24 +41,25 @@ body {
   line-height: 20px;
   margin-top: 10px;
 }
-.navbar .cart {
+.cart {
   position: relative;
   font-size: 20px;
   cursor: pointer;
 }
-.navbar .cart::after {
+
+.cart .cart-count {
   position: absolute;
   top: -8px;
-  right: -10px;
-  background: red;
+  right: -8px;
+  background-color: red;
   color: white;
   font-size: 12px;
-  border-radius: 50%;
   width: 18px;
   height: 18px;
+  border-radius: 50%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .cart-drawer {

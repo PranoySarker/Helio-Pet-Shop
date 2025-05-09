@@ -184,4 +184,15 @@ backdrop.addEventListener("click", () => {
   backdrop.classList.remove("show");
 });
 
+function updateCartCount() {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const cartCountElements = document.querySelectorAll("#cartCount");
+
+  cartCountElements.forEach((countElement) => {
+    countElement.textContent = cart.length;
+  });
+}
+
+updateCartCount();
+
 loadCartInfoOnPage();
