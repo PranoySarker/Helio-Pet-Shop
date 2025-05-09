@@ -126,7 +126,7 @@ function renderCartProducts() {
 
   cartTotal.textContent = `Total Price:$${total.toFixed(2)}`;
 
-  activateCartItemButtons(); // Attach button listeners after rendering
+  activateCartItemButtons();
 }
 
 function activateCartItemButtons() {

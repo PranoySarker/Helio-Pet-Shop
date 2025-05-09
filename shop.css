@@ -219,7 +219,7 @@ body {
   width: 100%;
   margin-top: 10px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 3 images side by side */
+  grid-template-columns: repeat(4, 1fr);
   gap: 8px;
 }
 
