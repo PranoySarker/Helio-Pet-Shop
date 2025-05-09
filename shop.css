@@ -6,6 +6,96 @@ body {
   background: #fff;
   color: #333;
 }
+
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-drawer.open {
+  transform: translateX(0);
+}
+
+.cart-drawer-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.cart-drawer-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.continue-shopping-btn {
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(255, 209, 56);
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  box-shadow: rgb(117, 109, 82) 0px 10px 0px 0px;
+  color: hsl(0, 0%, 0%);
+  cursor: pointer;
+}
+
+.continue-shopping-btn:hover {
+  box-shadow: rgb(117, 109, 82) 0px 7px 0px 0px;
+}
+
+.continue-shopping-btn:active {
+  background-color: rgb(255, 209, 56);
+  /*50, 168, 80*/
+  box-shadow: rgb(117, 109, 82) 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 200ms;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 900;
+}
+
+.backdrop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;

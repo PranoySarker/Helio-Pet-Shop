@@ -15,6 +15,20 @@
     />
   </head>
   <body>
+    <!-- cart-drawer -->
+    <div class="cart-drawer" id="cartDrawer">
+      <div class="cart-drawer-content">
+        <button id="closeDrawerBtn" class="close-btn">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </button>
+
+        <div class="cart-drawer-body">
+          <p class="empty-message">Your cart is empty</p>
+          <button class="continue-shopping-btn">Continue Shopping</button>
+        </div>
+      </div>
+    </div>
+    <div class="backdrop" id="backdrop"></div>
     <!-- Navbar -->
     <nav class="navbar">
       <div class="menu">
@@ -127,5 +141,8 @@
         </div>
       </div>
     </div>
+
+    <!-- JS -->
+    <script src="cart.js"></script>
   </body>
 </html>
