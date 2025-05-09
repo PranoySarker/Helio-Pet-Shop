@@ -53,6 +53,7 @@
           <img
             src="./images/product pic variations.png"
             alt="Helio Pet Device"
+            id="productImage"
           />
           <div class="left-image-sub-container">
             <img
@@ -120,15 +121,15 @@
 
         <div class="price">
           <del>$369.00</del>
-          <strong>$249.00</strong>
+          <strong id="productPrice">$249.00</strong>
         </div>
 
         <div class="product-action">
-          <button class="add-to-cart-btn">Add to Cart</button>
+          <button id="addToCart" class="add-to-cart-btn">Add to Cart</button>
           <div class="counter">
-            <button class="counter-btn">-</button>
-            <span class="counter-value">1</span>
-            <button class="counter-btn">+</button>
+            <button id="decrementBtn" class="counter-btn">-</button>
+            <span id="counterValue" class="counter-value">1</span>
+            <button id="incrementBtn" class="counter-btn">+</button>
           </div>
         </div>
 
